@@ -1,0 +1,24 @@
+---
+title: Default title
+---
+<html>
+<head>
+<title>{{ title }}</title>
+{% comment %} add link tag to the layout {% endcomment %}
+<link rel="stylesheet" href="/style/app.css">
+</head>
+<body>
+    <div class="header">
+    <a href="/">Home</a>
+    </div>
+    <div class="content">
+    {{ content }}
+    </div>
+
+    <footer>
+	<p>
+	Created by {{ site.author.name }}, follow on <a target="_blank" href="https://github.com/{{site.author.github}}">GitHub</a>.
+	</p>
+</footer>
+</body>
+</html>
