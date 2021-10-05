@@ -2,5 +2,8 @@
     "author": {
         "name": "Stefan Begerad",
         "github": "Software-Ingenieur-Begerad"
+    },
+    "organization": {
+	"name": "Software Ingenieur Begerad"
     }
 }
