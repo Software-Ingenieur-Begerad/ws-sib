@@ -4,6 +4,7 @@
         "github": "Software-Ingenieur-Begerad"
     },
     "organization": {
-	"name": "Software Ingenieur Begerad"
+	"name": "Software Ingenieur Begerad",
+	"short": "SIB"
     }
 }
