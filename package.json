@@ -1,0 +1,21 @@
+{
+  "name": "website",
+  "version": "0.0.1",
+  "description": "website of company Software Ingenieur Begerad",
+  "main": ".eleventy.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Software-Ingenieur-Begerad/website.git"
+  },
+  "author": "Stefan Begerad",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Software-Ingenieur-Begerad/website/issues"
+  },
+  "homepage": "https://github.com/Software-Ingenieur-Begerad/website#readme",
+  "dependencies": {}
+}
