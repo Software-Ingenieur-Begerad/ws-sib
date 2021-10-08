@@ -1,0 +1,12 @@
+{
+    "url": "https://swingb.de",
+    "language": "de-de",
+    "author": {
+        "name": "Stefan Begerad"
+    },
+    "organization": {
+	"name": "Software Ingenieur Begerad",
+	"short": "SIB",
+        "github": "Software-Ingenieur-Begerad"
+    }
+}

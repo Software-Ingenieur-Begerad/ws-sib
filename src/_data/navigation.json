@@ -1,0 +1,12 @@
+{
+  "items": [
+    {
+      "text": "Start",
+      "url": "/"
+    },
+    {
+      "text": "Kontakt",
+      "url": "/contact/"
+    }
+  ]
+}

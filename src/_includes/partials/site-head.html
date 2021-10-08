@@ -1,0 +1,39 @@
+<a class="[ skip-link ] [ button ]" href="#main-content">Skip to content</a>
+
+<!--the role banner assigns this element as the site header-->
+<header role="banner" class="site-head">
+  <div class="wrapper">
+    <div class="site-head__inner">
+
+      <!--link to site logo-->
+      <a
+	href="/"
+	aria-label="{{ site.organization.name }} - home"
+	class="site-head__brand">
+        {% include "partials/butterfly-side-black.svg" %}
+      </a>
+
+      <!--navigation-->
+      <nav
+	class="[ nav ] [ site-head__nav ] [ font-sans ]"
+	aria-label="Primary">
+
+	<ul class="nav__list">
+
+	  <!-- use Nunjucks loop to go through each item-->
+	  {% for item in navigation.items %}
+
+	  <li>
+	    <!--reference the global data item list-->
+	    <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a >
+	  </li>
+
+	  {% endfor %}
+
+	</ul>
+
+      </nav>
+
+    </div>
+  </div>
+</header>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang={{ site.language }}>
+
+  <head>
+    <meta charset="utf-8">
+    <title>{{ title }}</title>
+
+    <!--add link tag to the layout-->
+    <link rel="stylesheet" href="/style/app.css">
+  </head>
+
+  <body>
+
+    <!--include head as base for all sites-->
+    {% include "partials/site-head.html" %}
+
+    <!--the main element tells the browser where the main content of the site lives-->
+    <!--the id and tabindex attribute allows the main element to be programatically focused-->
+    <main tabindex="-1" id="main-content">
+
+      <!--create named placeholder for content-->
+      {% block content %}
+      <p>
+	This is a placeholder content that renders because a template doesn’t define this block.
+      </p>
+      {% endblock %}
+
+    </main>
+
+    <footer>
+	<p>
+	  {{ site.organization.name }} auf
+	  <a
+	    target="_blank"
+	    href="https://github.com/{{site.organization.github}}">
+	    GitHub
+	  </a> folgen.
+	</p>
+    </footer>
+
+  </body>
+</html>
