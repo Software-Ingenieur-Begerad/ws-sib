@@ -1,5 +1,5 @@
 ---
-title: Software Ingenieur Begerad
+title: Software Ingenieur Begerad - Kontakt
 layout: 'layouts/home.html'
 ---
     <h2>Kontakt</h2>

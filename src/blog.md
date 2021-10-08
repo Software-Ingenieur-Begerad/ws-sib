@@ -1,5 +1,5 @@
 ---
-title: 'Blog'
+title: Software Ingenieur Begerad - Blog
 layout: 'layouts/home.html'
 ---
 
