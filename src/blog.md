@@ -3,5 +3,4 @@ title: Software Ingenieur Begerad - Blog
 layout: 'layouts/home.html'
 ---
 
-The latest articles from around the studio, demonstrating our design
-thinking, strategy and expertise.
+Hier finden sie die neuesten Blogbeiträg von *{{ site.organization.name }}*.
