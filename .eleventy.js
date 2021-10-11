@@ -1,3 +1,5 @@
+const CleanCSS = require("clean-css");
+
 //define 11ty RSS plugin
 const rssPlugin = require('@11ty/eleventy-plugin-rss');
 
@@ -7,6 +9,11 @@ const w3DateFilter = require('./src/filters/w3-date-filter.js');
 
 //11ty config file
 module.exports = config => {
+
+    //add cssmin filter fo config
+    config.addFilter("cssmin", function(code) {
+	return new CleanCSS({}).minify(code).styles;
+    });
 
     //add filters to config
     config.addFilter('dateFilter', dateFilter);

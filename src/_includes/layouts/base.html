@@ -5,6 +5,15 @@
     <meta charset="utf-8">
     {% include "partials/meta-info.html" %}
     <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml" />
+
+    <!-- capture the CSS content as a Nunjucks variable -->
+    {% set css %}
+    {% include "sample.css" %}
+    {% endset %}
+    <!-- feed it through our cssmin filter to minify -->
+    <style>
+      {{ css | cssmin | safe }}
+    </style>
   </head>
 
   <body>
