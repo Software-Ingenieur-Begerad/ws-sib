@@ -1,5 +1,13 @@
+//define filters
+const dateFilter = require('./src/filters/date-filter.js');
+const w3DateFilter = require('./src/filters/w3-date-filter.js');
+
 //11ty config file
 module.exports = config => {
+
+    //add filters to config
+    config.addFilter('dateFilter', dateFilter);
+    config.addFilter('w3DateFilter', w3DateFilter);
 
     //create named colledction called blog
     config.addCollection('blog', collection => {

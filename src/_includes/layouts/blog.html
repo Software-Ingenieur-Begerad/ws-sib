@@ -1,13 +1,12 @@
 <!--tell this template to extend another one-->
 {% extends "layouts/base.html" %}
 
+<!--set data for the following partials-->
+{% set blogPageHeaderTitle = title %}
+{% set blogPageHeaderSummary = content %}
 
 <!--create named placeholder for content-->
 {% block content %}
-
-<!-set data for the following partials-->
-{% set blogPageHeaderTitle = title %}
-{% set blogPageHeaderSummary = content %}
 
 <article>
   <!--include blog page header-->
