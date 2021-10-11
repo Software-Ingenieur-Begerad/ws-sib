@@ -10,7 +10,7 @@ module.exports = config => {
 	//as it is data of a priece of content
 	//using spread syntax to create a copy of the original array itself instead of mutating the original
 	//the reverse method can now safely apply the mutation on the copy
-	return [...collection.getFilteredByGlob('./src/posts/*.md')].reverse();
+	return [...collection.getFilteredByGlob('./src/blog-posts/*.md')].reverse();
     });
 
     //return some settings

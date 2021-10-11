@@ -5,11 +5,16 @@
 <!--create named placeholder for content-->
 {% block content %}
 
-      <div>
-        <h1>{{ title }}</h2>
-        <p>{{ content | safe }}</p>
-      </div>
+<!-set data for the following partials-->
+{% set blogPageHeaderTitle = title %}
+{% set blogPageHeaderSummary = content %}
 
-      {% include "partials/blog-list.html" %}
+<article>
+  <!--include blog page header-->
+  {% include "partials/blog-page-header.html" %}
 
+  <!--include blog page list-->
+  {% include "partials/blog-list.html" %}
+
+</article>
 {% endblock %}
