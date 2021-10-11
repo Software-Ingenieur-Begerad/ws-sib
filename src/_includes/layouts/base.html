@@ -5,8 +5,6 @@
     <meta charset="utf-8">
     <title>{{ title }}</title>
 
-    <!--add link tag to the layout-->
-    <link rel="stylesheet" href="/style/app.css">
   </head>
 
   <body>
@@ -27,16 +25,8 @@
 
     </main>
 
-    <footer>
-	<p>
-	  {{ site.organization.name }} auf
-	  <a
-	    target="_blank"
-	    href="https://github.com/{{site.organization.github}}">
-	    GitHub
-	  </a> folgen.
-	</p>
-    </footer>
-
+    <!--include site footer-->
+    {% include "partials/site-foot.html" %}
+    
   </body>
 </html>

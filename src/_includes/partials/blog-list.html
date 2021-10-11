@@ -1,0 +1,14 @@
+<article>
+  <div>
+
+      {% for item in collections.blog %}
+
+      <p>
+	<a href="{{ item.url }}">
+	  {{ item.data.title }}</a>
+      </p>
+
+      {% endfor %}
+
+  </div>
+</article>

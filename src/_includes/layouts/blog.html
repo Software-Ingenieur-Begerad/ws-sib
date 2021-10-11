@@ -1,0 +1,15 @@
+<!--tell this template to extend another one-->
+{% extends "layouts/base.html" %}
+
+
+<!--create named placeholder for content-->
+{% block content %}
+
+      <div>
+        <h1>{{ title }}</h2>
+        <p>{{ content | safe }}</p>
+      </div>
+
+      {% include "partials/blog-list.html" %}
+
+{% endblock %}

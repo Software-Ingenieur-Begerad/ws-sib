@@ -1,6 +1,5 @@
 ---
-title: Software Ingenieur Begerad - Blog
-layout: 'layouts/home.html'
+layout: 'layouts/blog.html'
+title: Blog
 ---
-
-Hier finden sie die neuesten Blogbeiträg von *{{ site.organization.name }}*.
+Hier finden sie Blogbeiträge zum Thema Softwarefreiheit.
