@@ -1,8 +1,10 @@
 {
+    "name": "swingb.de",
     "url": "https://swingb.de",
     "language": "de-de",
     "author": {
-        "name": "Stefan Begerad"
+        "name": "Stefan Begerad",
+	"email": "dialog@swingb.de"
     },
     "organization": {
 	"name": "Software Ingenieur Begerad",
