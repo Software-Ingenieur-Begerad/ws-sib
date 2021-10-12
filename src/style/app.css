@@ -1,0 +1,16 @@
+body {
+    background-color: #9683EC;
+}
+
+#header {
+    background-color: white;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#footer {
+    background-color: white;
+    padding: 1px;
+    font-size: 12px;
+}

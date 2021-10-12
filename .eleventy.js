@@ -8,11 +8,18 @@ const w3DateFilter = require('./src/filters/w3-date-filter.js');
 //11ty config file
 module.exports = config => {
 
+    //the addPassthroughCopy function takes globs of any sort
+    //and can be used multiple times
+    config.addPassthroughCopy("./src/style");
+
+    //get eleventy to notice changes in the stylce dir
+    config.addWatchTarget("./src/style");
+
     //add filters to config
     config.addFilter('dateFilter', dateFilter);
     config.addFilter('w3DateFilter', w3DateFilter);
 
-    //add plugins
+    //add plugins to config
     config.addPlugin(rssPlugin);
 
     //create named colledction called blog
