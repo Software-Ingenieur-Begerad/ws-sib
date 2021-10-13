@@ -1,3 +1,9 @@
+/*
+ * SPDX-FileCopyrightText: 2021 Software Ingenieur Begerad <swingb.de>
+ *
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ */
+
 //define 11ty RSS plugin
 const rssPlugin = require('@11ty/eleventy-plugin-rss');
 

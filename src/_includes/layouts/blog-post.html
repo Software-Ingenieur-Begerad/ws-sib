@@ -1,3 +1,7 @@
+<!--
+SPDX-FileCopyrightText: 2021 Software Ingenieur Begerad <swingb.de>
+SPDX-License-Identifier: GPL-3.0-or-later
+  -->
 <!--tell this template to extend another one-->
 {% extends "layouts/base.html" %}
 
@@ -5,7 +9,12 @@
 
 <!--render post date and any tags that this post has been filed under-->
 {% set pageHeaderSummary %}
-  <time datetime="{{ date | w3DateFilter }}">{{ date | dateFilter }}</time>
+
+<time
+  datetime="{{ date | w3DateFilter }}">
+  {{ date | dateFilter }}
+</time>
+
 {% endset %}
 
 <!--create named placeholder for content-->
