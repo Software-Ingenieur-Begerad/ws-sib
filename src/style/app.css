@@ -7,6 +7,11 @@ body {
     background-color: #9683EC;
 }
 
+hr {
+    border: none;
+    background: white;
+    height: 5px
+}
 #header {
     background-color: white;
     padding: 5px;
