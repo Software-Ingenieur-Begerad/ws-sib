@@ -6,21 +6,23 @@ SPDX-License-Identifier: GPL-3.0-or-later
 <html lang={{ site.language }}>
 
   <head>
-    <meta charset="utf-8">
+    <!--add title and meta tags-->
     {% include "partials/meta-info.html" %}
+
+    <!--add RSS feed-->
     <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml" />
+
+    <!--add style-->
     <link rel="stylesheet" href="/style/app.css">
   </head>
 
   <body>
-
     <!--including site header-->
     {% include "partials/site-head.html" %}
 
     <!--the main element tells the browser where the main content of the site lives-->
     <!--the id and tabindex attribute allows the main element to be programatically focused-->
     <main tabindex="-1" id="main-content">
-
       <!--create named placeholder for content-->
       {% block content %}
       <p>

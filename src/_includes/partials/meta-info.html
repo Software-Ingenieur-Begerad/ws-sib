@@ -22,8 +22,13 @@ SPDX-License-Identifier: GPL-3.0-or-later
   {% set metaDesc = summary %}
 {% endif %}
 
+
 <title>{{ pageTitle }}</title>
+
 <link rel="canonical" href="{{ currentUrl }}" />
+
+<!--meta-->
+<meta charset="utf-8">
 
 <meta property="og:site_name" content="{{ siteTitle }}" />
 <meta property="og:title" content="{{ pageTitle }}" />
@@ -31,15 +36,23 @@ SPDX-License-Identifier: GPL-3.0-or-later
 <meta property="og:url" content="{{ currentUrl }}" />
 
 {% if socialImage %}
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta property="og:image" content="{{ socialImage }}" />
-  <meta name="twitter:image" content="{{ socialImage }}" />
-  <meta property="og:image:alt" content="Page image for {{ site.name }}" />
-  <meta name="twitter:image:alt" content="Page image for {{ site.name }}" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="og:image" content="{{ socialImage }}" />
+<meta name="twitter:image" content="{{ socialImage }}" />
+<meta property="og:image:alt" content="Page image for {{ site.name }}" />
+<meta name="twitter:image:alt" content="Page image for {{ site.name }}" />
 {% endif %}
 
 {% if metaDesc %}
-  <meta name="description" content="{{ metaDesc }}" />
-  <meta name="twitter:description" content="{{ metaDesc }}" />
-  <meta property="og:description" content="{{ metaDesc }}" />
+<meta name="description" content="{{ metaDesc }}" />
+<meta name="twitter:description" content="{{ metaDesc }}" />
+<meta property="og:description" content="{{ metaDesc }}" />
 {% endif %}
+
+{% if metaKey %}
+<meta name="keywords"
+      content="{{ metaKey }}" />
+{% endif %}
+
+<meta name="author"
+      content="Software Ingenieur Begerad">
