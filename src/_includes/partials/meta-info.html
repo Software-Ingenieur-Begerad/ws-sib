@@ -2,6 +2,7 @@
 SPDX-FileCopyrightText: 2021 Software Ingenieur Begerad <swingb.de>
 SPDX-License-Identifier: GPL-3.0-or-later
   -->
+
 {% set pageTitle = title + ' - ' + site.name %}
 
 <!--We don't want any duplication. This is likely for the home page.-->
@@ -10,10 +11,10 @@ SPDX-License-Identifier: GPL-3.0-or-later
 {% endif %}
 
 {% set siteTitle = site.name %}
+{% set siteOrg = site.organization.name %}
 {% set currentUrl = site.url + page.url %}
 
-<!--If the page’s Front Matter has specific metaTitle and/or metaDesc items, switch 
-  them into the mix.-->
+<!--If the page’s Front Matter has specific metaTitle and/or metaDesc items, switch them into the mix.-->
 {% if metaTitle %}
   {% set pageTitle = metaTitle %}
 {% endif %}
@@ -22,13 +23,14 @@ SPDX-License-Identifier: GPL-3.0-or-later
   {% set metaDesc = summary %}
 {% endif %}
 
-
-<title>{{ pageTitle }}</title>
-
 <link rel="canonical" href="{{ currentUrl }}" />
 
-<!--meta-->
+<!--set meta-->
 <meta charset="utf-8">
+
+<!--Always include the viewport <meta> tag inside the <head> section of your document to enable touch zooming and ensure proper rendering on mobile devices.-->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <meta property="og:site_name" content="{{ siteTitle }}" />
 <meta property="og:title" content="{{ pageTitle }}" />
@@ -50,9 +52,9 @@ SPDX-License-Identifier: GPL-3.0-or-later
 {% endif %}
 
 {% if metaKey %}
-<meta name="keywords"
-      content="{{ metaKey }}" />
+<meta name="keywords" content="{{ metaKey }}" />
 {% endif %}
 
-<meta name="author"
-      content="Software Ingenieur Begerad">
+<meta name="author" content="{{ siteOrg }}">
+
+<title>{{ pageTitle }}</title>

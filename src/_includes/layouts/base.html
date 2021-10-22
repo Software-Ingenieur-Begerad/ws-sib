@@ -12,8 +12,8 @@ SPDX-License-Identifier: GPL-3.0-or-later
     <link rel="alternate" type="application/rss+xml"
 	  href="{{ site.url }}/feed.xml" />
 
-    <!--add style-->
-    <link rel="stylesheet" href="/style/app.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   </head>
   <body>
     <!--including site header-->
@@ -28,11 +28,11 @@ SPDX-License-Identifier: GPL-3.0-or-later
 	This is a placeholder content that renders because a template doesn’t define this block.
       </p>
       {% endblock %}
-
     </main>
 
     <!--include site footer-->
     {% include "partials/site-foot.html" %}
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
