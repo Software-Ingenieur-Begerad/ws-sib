@@ -2,12 +2,22 @@
 SPDX-FileCopyrightText: 2021 Software Ingenieur Begerad <swingb.de>
 SPDX-License-Identifier: GPL-3.0-or-later
   -->
+
 <header>
 
-  <nav>
-    <a href="/">SIB</a> ~
-    <a href="/about">Über uns</a> ~
-    <a href="/blog">Blog</a> ~
-    <a href="/contact">Kontakt</a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a href="/" class="navbar-brand">SIB</a>
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+	<span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+	<div class="navbar-nav">
+	  <a href="/" class="nav-item nav-link active">Start</a>
+	  <a href="/about" class="nav-item nav-link active">Über uns</a>
+	  <a href="/blog" class="nav-item nav-link active">Blog</a>
+	  <a href="/contact" class="nav-item nav-link active">Kontakt</a>
+	</div>
   </nav>
+
 </header>
