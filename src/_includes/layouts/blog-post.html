@@ -5,16 +5,14 @@ SPDX-License-Identifier: GPL-3.0-or-later
 <!--tell this template to extend another one-->
 {% extends "layouts/base.html" %}
 
-{% set pageHeaderTitle = title %}
+<!--set title-->
+{% set blogPageHeaderTitle = title %}
 
 <!--render post date and any tags that this post has been filed under-->
-{% set pageHeaderSummary %}
-
-<time
-  datetime="{{ date | w3DateFilter }}">
+{% set blogPageHeaderSummary %}
+<time datetime="{{ date | w3DateFilter }}">
   {{ date | dateFilter }}
 </time>
-
 {% endset %}
 
 <!--create named placeholder for content-->
@@ -22,9 +20,9 @@ SPDX-License-Identifier: GPL-3.0-or-later
   <article>
     {% include "partials/blog-page-header.html" %}
 
-    <div class="[ page-content ] [ flow wrapper ] [ flow-space-700 gap-top-700 ]">
+    <div>
       {{ content | safe }}
     </div>
-  </article>
 
+  </article>
 {% endblock %}

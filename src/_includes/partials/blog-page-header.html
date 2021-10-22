@@ -2,15 +2,18 @@
 SPDX-FileCopyrightText: 2021 Software Ingenieur Begerad <swingb.de>
 SPDX-License-Identifier: GPL-3.0-or-later
   -->
-<div class="[ page-header ] [ bg-light-glare ]">
-  <div class="[ wrapper ] [ flow ]">
-    <h1 class="[ page-header__heading ] [ headline ]" data-highlight="primary">
+<div>
+
+  <div>
+    <h1>
       {{ blogPageHeaderTitle }}
     </h1>
+
     {% if blogPageHeaderSummary %}
-    <div class="[ page-header__summary ] [ measure-long ]">
+    <div>
       {{ blogPageHeaderSummary | safe }}
     </div>
     {% endif %}
   </div>
+
 </div>
