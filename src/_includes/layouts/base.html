@@ -2,20 +2,19 @@
 <!--
 SPDX-FileCopyrightText: 2021 Software Ingenieur Begerad <swingb.de>
 SPDX-License-Identifier: GPL-3.0-or-later
-  -->
+-->
 <html lang={{ site.language }}>
-
   <head>
     <!--add title and meta tags-->
     {% include "partials/meta-info.html" %}
 
     <!--add RSS feed-->
-    <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml" />
+    <link rel="alternate" type="application/rss+xml"
+	  href="{{ site.url }}/feed.xml" />
 
     <!--add style-->
     <link rel="stylesheet" href="/style/app.css">
   </head>
-
   <body>
     <!--including site header-->
     {% include "partials/site-head.html" %}
