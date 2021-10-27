@@ -1,6 +1,6 @@
 # Website
 This repository contains the website of the organization
-[Software Ingenieur Begerad](https://swingb.de).
+[Software Ingenieur Begerad](https://swingbe.de).
 
 ## Install
 

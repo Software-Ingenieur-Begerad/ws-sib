@@ -1,6 +1,6 @@
 {
-    "name": "swingb.de",
-    "url": "https://swingb.de",
+    "name": "swingbe.de",
+    "url": "https://swingbe.de",
     "language": "de-de",
     "rss": {
 	"permalink": "/feed.xml",
@@ -8,11 +8,12 @@
     },
     "author": {
         "name": "Stefan Begerad",
-	"email": "dialog@swingb.de"
+	"email": "dialog@swingbe.de"
     },
     "organization": {
 	"name": "Software Ingenieur Begerad",
 	"short": "SIB",
-        "github": "Software-Ingenieur-Begerad"
+	"url": "https://swingbe.de",
+	"email": "dialog@swingbe.de"
     }
 }
