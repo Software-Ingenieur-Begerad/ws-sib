@@ -16,7 +16,11 @@ module.exports = config => {
 
     //the addPassthroughCopy function takes globs of any sort
     //and can be used multiple times
+    //copy `style` folger to the output
     config.addPassthroughCopy("./src/style");
+
+    //copy img` folger to the output
+    config.addPassthroughCopy("img");
 
     //get eleventy to notice changes in the stylce dir
     config.addWatchTarget("./src/style");
