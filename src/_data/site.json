@@ -2,10 +2,6 @@
     "name": "swingbe.de",
     "url": "https://swingbe.de",
     "language": "de-de",
-    "rss": {
-	"permalink": "/feed.xml",
-	"summary": "A feed of the latest posts about software freedow from the company Software Ingeneur Begerad"
-    },
     "author": {
         "name": "Stefan Begerad",
 	"email": "dialog@swingbe.de"

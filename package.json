@@ -19,7 +19,6 @@
   "homepage": "https://github.com/Software-Ingenieur-Begerad/website#readme",
   "dependencies": {
     "@11ty/eleventy": "^1.0.1",
-    "@11ty/eleventy-plugin-rss": "^1.1.2",
     "moment": "^2.29.3"
   }
 }

@@ -4,9 +4,6 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-//define 11ty RSS plugin
-const rssPlugin = require('@11ty/eleventy-plugin-rss');
-
 //define filters
 const dateFilter = require('./src/filters/date-filter.js');
 const w3DateFilter = require('./src/filters/w3-date-filter.js');
@@ -28,9 +25,6 @@ module.exports = config => {
     //add filters to config
     config.addFilter('dateFilter', dateFilter);
     config.addFilter('w3DateFilter', w3DateFilter);
-
-    //add plugins to config
-    config.addPlugin(rssPlugin);
 
     //create named colledction called blog
     config.addCollection('blog', collection => {
