@@ -1,0 +1,23 @@
+<!--
+SPDX-FileCopyrightText: 2022 Software Ingenieur Begerad <swingbe.de>
+SPDX-License-Identifier: GPL-3.0-or-later
+  -->
+<!--tell this template to extend another one-->
+{% extends "layouts/base.html" %}
+
+<!--set data for the following partials-->
+{% set blogPageHeaderTitle = title %}
+{% set blogPageHeaderSummary = content %}
+
+<!--create named placeholder for content-->
+{% block-activity content %}
+
+<article>
+  <!--include blog page header-->
+  {% include "partials/blog-page-header.html" %}
+
+  <!--include blog page list-->
+  {% include "partials/blog-list.html" %}
+
+</article>
+{% endblock %}

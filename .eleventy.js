@@ -26,9 +26,8 @@ module.exports = config => {
     config.addFilter('dateFilter', dateFilter);
     config.addFilter('w3DateFilter', w3DateFilter);
 
-    //create named collection called blog
+    //create named collection
     config.addCollection('blog', collection => {
-
 	//tell 11ty to find all *.md files and return as array
 	//displayOrder hangs out in Front Matter
 	//Front Matter is accessed with the data prefix
@@ -36,6 +35,11 @@ module.exports = config => {
 	//using spread syntax to create a copy of the original array itself instead of mutating the original
 	//the reverse method can now safely apply the mutation on the copy
 	return [...collection.getFilteredByGlob('./src/blog-posts/*.md')].reverse();
+    });
+
+    //create named collection
+    config.addCollection('blog-activity', collection => {
+	return [...collection.getFilteredByGlob('./src/blog-activity-posts/*.md')].reverse();
     });
 
     //return some settings
