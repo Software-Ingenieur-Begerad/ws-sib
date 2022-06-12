@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: 2021 Software Ingenieur Begerad <swingbe.de>
+ * SPDX-FileCopyrightText: 2022 Software Ingenieur Begerad <swingbe.de>
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -26,7 +26,7 @@ module.exports = config => {
     config.addFilter('dateFilter', dateFilter);
     config.addFilter('w3DateFilter', w3DateFilter);
 
-    //create named colledction called blog
+    //create named collection called blog
     config.addCollection('blog', collection => {
 
 	//tell 11ty to find all *.md files and return as array

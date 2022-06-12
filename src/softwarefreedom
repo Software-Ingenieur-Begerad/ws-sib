@@ -2,10 +2,6 @@
 layout: 'layouts/home.html'
 title: Idee
 ---
-<!--
-SPDX-FileCopyrightText: 2022 Software Ingenieur Begerad <swingbe.de>
-SPDX-License-Identifier: GPL-3.0-or-later
--->
 <div class="container-fluid">
   <div class="row g-0">
     <div class="col">
@@ -23,7 +19,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
 	Anfragen können Kunden direkt an
 	<a href="/contact">SIB</a>
 	richten.
-	Einen Eindruck über bisherige Arbeit bekommen Kunden auf der Seite
+	Einen Eindruck über bisherige Arbeit finden Kunden auf der Seite
 	<a href="/activity">Aktivitäten</a>.
 	</p>
     </div>
