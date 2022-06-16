@@ -1,0 +1,44 @@
+<!--
+SPDX-FileCopyrightText: 2022 Software Ingenieur Begerad <swingbe.de>
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+<article class="[ featured-work ] [ dot-shadow panel ] [ bg-light-glare ]">
+  <div class="[ wrapper ] [ flow ]">
+    <div class="[ featured-work__inner ] [ flow ]">
+      <div class="[ featured-work__intro ] [ flow flow-space-300 ]">
+        <h2
+          class="[ featured-work__heading ] [ headline ] [ color-quinary-shade lg:measure-micro ]"
+          data-highlight="dark"
+        >
+          {{ work.title }}
+        </h2>
+        <p class="[ featured-work__summary ] [ measure-compact ]">
+          {{ work.summary }}
+        </p>
+      </div>
+      {% for item in collections.work %}
+      <a
+        href="{{ item.url }}"
+        aria-label="See {{ item.data.title }}"
+        class="[ featured-work__item ] [ frame ]"
+        data-frame="quaternary"
+	>
+	<!--TODO cleanup debugging
+        <img
+          src="{{ item.data.hero.image }}"
+          alt="{{ item.data.hero.imageAlt }}"
+          loading="lazy"
+          class="radius"
+        />
+	-->
+	See {{ item.data.title }} at {{ item.url }}
+	<br />
+      </a>
+      {{ item.title }}
+      {% endfor %}
+    </div>
+    <div class="[ featured-work__action ] [ flow-space-700 ]">
+      <a href="/work/" class="button">See more work</a>
+    </div>
+  </div>
+</article>
