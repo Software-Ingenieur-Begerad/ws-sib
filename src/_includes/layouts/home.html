@@ -10,7 +10,8 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
   <article>
     <h1>{{ title }}</h1>
-    <!--render content-->
+    <!--render markdown content-->
+    <!--a filter called 'safe' is applied to variable 'content'-->
     {{ content | safe }}
   </article>
 
