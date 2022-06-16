@@ -6,6 +6,17 @@
 *~
 package-lock.json
 
+# Misc
+npm-debug.*
+*.scssc
+*.swp
+.DS_Store
+Thumbs.db
+.sass-cache
+
+# Outputs
+src/_includes/css
+
 # Eleventy
 _site
 
