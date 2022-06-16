@@ -1,6 +1,7 @@
 ---
 layout: 'layouts/blog-post.html'
 title: 'Awesome Transit'
+summary: 'Erfahren sie hier von der umfangreichsten Sammlung (soweit bekannt)  von Software für Mobilität und öffentlichen Verkehr basierend auf dem Gedanken der Softwarefreiheit.'
 date: '2022-06-11'
 ---
 Nach meinem Studium an der Technischen Universität Braunschweig durfte ich etwa
@@ -42,16 +43,16 @@ Als Aktivist bzw. Mitglied in den Vereinen
 ich mir Kenntnisse darüber angeeignet, wie Gemeinschaften (Communities) arbeiten.
 Daher war es für mich naheliegend nach bereits existierenden Aktivitäten von
 Gleichgesinnten zu suchen. Im besten Fall finde ich gleichzeitig eine Übersicht
-von Initiativen mit Softwarefreiheit für Mobilität bzw öffentlichen Verkehr.
+von Initiativen mit [Softwarefreiheit](https://fsfe.org/freesoftware/freesoftware.de.html) für Mobilität bzw öffentlichen Verkehr.
 Mit dem Fund von [awesome-transit](https://github.com/CUTR-at-USF/awesome-transit)
 habe ich meine Vorahnung schnell bestätigt.
 
 Das [git](https://en.wikipedia.org/wiki/Git) Projekt
 [awesome-transit](https://github.com/CUTR-at-USF/awesome-transit) wurde von
 [Sean Barbeau](https://github.com/barbeau) initialisiert und lebt von der
-Unterstützung von Personen wie mir. Es handelt sich um die umfangreichste Liste
+Unterstützung von Personen wie mir. Es handelt sich um die umfangreichste Sammlung
 von Initiativen für Mobilität und den öffentlichen Verkehr, welche auf den
-Grundgedanken der Softwarefreiheit beruhen. Für viele Unternehmensbereiche (bspw.
+Grundgedanken der [Softwarefreiheit](https://fsfe.org/freesoftware/freesoftware.de.html) beruhen. Für viele Unternehmensbereiche (bspw.
 Fahrplanung, Auskunft, Vertrieb, Disposition) gibt es hier teilweise mehrere
 Einträge von passender Software.
 

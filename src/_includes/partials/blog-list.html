@@ -1,5 +1,5 @@
 <!--
-SPDX-FileCopyrightText: 2021 Software Ingenieur Begerad <swingbe.de>
+SPDX-FileCopyrightText: 2022 Software Ingenieur Begerad <swingbe.de>
 SPDX-License-Identifier: GPL-3.0-or-later
   -->
 <div>
@@ -9,14 +9,20 @@ SPDX-License-Identifier: GPL-3.0-or-later
       {{ postListHeadline }}
     </h2>
     {% endif %}
-    <div>
-      <ol>
-	{% for item in collections.blog %}
-        <li>
-          <a href="{{ item.url }}">{{ item.data.title }}</a>
-        </li>
-	{% endfor %}
-      </ol>
+    <div class="container-fluid">
+      {% for item in collections.blog %}
+      <div class="p-5 my-4 bg-light rounded-3">
+	<h1>{{ item.data.title }}</h1>
+	<p class="lead">
+	  {{ item.data.summary }}
+	<p>
+	  <a href="{{ item.url }}" class="btn btn-success btn-lg"
+	     style="background-color: #4b0082;">Mehr
+	  </a>
+	</p>
+      </div>
+      <a href="{{ item.url }}">{{ item.data.title }}</a>
+      {% endfor %}
     </div>
   </div>
 </div>
