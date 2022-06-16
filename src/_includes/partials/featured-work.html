@@ -2,6 +2,7 @@
 SPDX-FileCopyrightText: 2022 Software Ingenieur Begerad <swingbe.de>
 SPDX-License-Identifier: GPL-3.0-or-later
 -->
+{% if collections.featuredWork.length %}
 <article class="[ featured-work ] [ dot-shadow panel ] [ bg-light-glare ]">
   <div class="[ wrapper ] [ flow ]">
     <div class="[ featured-work__inner ] [ flow ]">
@@ -15,6 +16,9 @@ SPDX-License-Identifier: GPL-3.0-or-later
         <p class="[ featured-work__summary ] [ measure-compact ]">
           {{ featuredWork.summary }}
         </p>
+	<p>
+          length: {{ collections.featuredWork.length }}
+	</p>
       </div>
       {% for item in collections.featuredWork %}
       <a
@@ -42,3 +46,4 @@ SPDX-License-Identifier: GPL-3.0-or-later
     </div>
   </div>
 </article>
+{% endif %}
