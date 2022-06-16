@@ -46,8 +46,7 @@ module.exports = config => {
 	dataTemplateEngine: 'njk',
 	htmlTemplateEngine: 'njk',
 
-	//tell 11ty to look in the src folder for content, templates and other source code and
-	//use dist as output folder
+	//tell 11ty the input folder for content, templates and other source code and the output folder for builds
 	dir: {
 	    input: 'src',
 	    output: 'dist'

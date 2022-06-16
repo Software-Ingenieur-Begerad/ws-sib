@@ -1,13 +1,17 @@
 <!--
-SPDX-FileCopyrightText: 2021 Software Ingenieur Begerad <swingbe.de>
+SPDX-FileCopyrightText: 2022 Software Ingenieur Begerad <swingbe.de>
 SPDX-License-Identifier: GPL-3.0-or-later
   -->
 <!--tell this template to extend another one-->
 {% extends "layouts/base.html" %}
 
-<!-- implement block from extended layouts if you do not want to see any placeholders-->
+<!--implement block from extended layouts if you do not want to see any placeholders-->
 {% block content %}
 
-{{ content | safe }}
+  <article>
+    <h1>{{ title }}</h1>
+    <!--render content-->
+    {{ content | safe }}
+  </article>
 
 {% endblock %}
