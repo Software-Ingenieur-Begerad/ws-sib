@@ -2,8 +2,7 @@
 SPDX-FileCopyrightText: 2022 Software Ingenieur Begerad <swingbe.de>
 SPDX-License-Identifier: GPL-3.0-or-later
   -->
-<header>
-  <!--navbar requires the following wrapping-->
+<header role="banner" class="site-head">
   <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #4b0082;">
 
     <div class="container-fluid">
@@ -22,9 +21,14 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
 	<!--sub-component navbar-nav to present navigation including dropdowns-->
 	<div class="navbar-nav">
-	  <a href="/about" class="nav-item nav-link active">Über uns</a>
-	  <a href="/blog" class="nav-item nav-link active">Blog</a>
-	  <a href="/contact" class="nav-item nav-link active">Kontakt</a>
+	  <!--use njk's loop to go through each 'item'-->
+	  <!--more about page variable: https://www.11ty.dev/docs/data-eleventy-supplied/#page-variable-contents-->
+	  {% for item in navigation.items %}
+	  <a href="{{ item.url }}"
+	     class="nav-item nav-link active"
+	     {{ helpers.getLinkActiveState(item.url, page.url) | safe }}
+	     >{{ item.text }}</a>
+	  {% endfor %}
 	</div>
   </nav>
 </header>
