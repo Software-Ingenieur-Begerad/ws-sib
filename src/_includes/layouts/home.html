@@ -14,5 +14,8 @@ SPDX-License-Identifier: GPL-3.0-or-later
     <!--a filter called 'safe' is applied to variable 'content'-->
     {{ content | safe }}
   </article>
-
+  <!--include partial and set ctaContent variable-->
+  <!--partials can access variables that are set from outside of them-->
+  {% set ctaContent = cta %}
+  {% include "partials/cta.html" %}
 {% endblock %}

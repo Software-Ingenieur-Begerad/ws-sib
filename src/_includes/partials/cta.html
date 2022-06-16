@@ -1,0 +1,23 @@
+<!--
+SPDX-FileCopyrightText: 2022 Software Ingenieur Begerad <swingbe.de>
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+<!--pull content from cta.json by setting ctaPrefix as cta-->
+<!--using njk's 'set' feature creating the variable 'cta'-->
+{% set ctaPrefix = cta %}
+{% if ctaContent %}
+{% set ctaPrefix = ctaContent %}
+{% endif %}
+
+<div class="container-fluid">
+  <div class="p-5 my-4 bg-light rounded-3">
+    <h1>{{ ctaPrefix.title }}</h1>
+    <p class="lead">
+      {{ ctaPrefix.summary }}
+    </p>
+    <p>
+      <a href="{{ ctaPrefix.buttonUrl }}" class="btn btn-success btn-lg"
+	  style="background-color: #4b0082;">{{ ctaPrefix.buttonText }}</a>
+    </p>
+  </div>
+</div>
