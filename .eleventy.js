@@ -29,7 +29,7 @@ module.exports = config => {
     //add named collection called activity
     //return items, sorted by display order
     config.addCollection('activity', collection => {
-	return sortByDisplayOrder(collection.getFilteredByGlob('./src/activity/*.md'));
+	return sortByDisplayOrder(collection.getFilteredByGlob('./src/activity/*'));
     });
 
     //create named collection called blog
