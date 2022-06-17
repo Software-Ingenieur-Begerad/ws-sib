@@ -1,39 +1,24 @@
 <!--
 SPDX-FileCopyrightText: 2022 Software Ingenieur Begerad <swingbe.de>
 SPDX-License-Identifier: GPL-3.0-or-later
--->
-<article class="[ featured-work ] [ dot-shadow panel ] [ bg-light-glare ]">
-  <div class="[ wrapper ] [ flow ]">
-    <div class="[ featured-work__inner ] [ flow ]">
-      <div class="[ featured-work__intro ] [ flow flow-space-300 ]">
-        <h2
-          class="[ featured-work__heading ] [ headline ] [ color-quinary-shade lg:measure-micro ]"
-          data-highlight="dark"
-        >
-          {{ activity.title }}
-        </h2>
-        <p class="[ featured-work__summary ] [ measure-compact ]">
-          {{ activity.summary }}
-        </p>
-	<p>
-          length: {{ collections.activity.length }}
-	</p>
-      </div>
-      {% for item in collections.activity %}
-      <a
-        href="{{ item.url }}"
-        aria-label="See {{ item.data.title }}"
-        class="[ featured-work__item ] [ frame ]"
-        data-frame="quaternary"
-	>
-	See {{ item.data.title }} at {{ item.url }}
-	<br />
-      </a>
-      {{ item.title }}
-      {% endfor %}
-    </div>
-    <div class="[ featured-work__action ] [ flow-space-700 ]">
-      <a href="/work/" class="button">See more work</a>
-    </div>
-  </div>
-</article>
+  -->
+<h2>
+  {{ activity.title }}
+</h2>
+<p>
+  {{ activity.summary }}
+</p>
+{% for item in collections.activity %}
+<div class="p-5 my-4 bg-light rounded-3">
+  <h1>{{ item.data.title }}</h1>
+  <p class="lead">
+    {{ item.data.summary }}
+  </p>
+  <p>
+    <a href="{{ item.url }}" class="btn btn-success btn-lg"
+       style="background-color: #4b0082;">
+      {{ item.data.buttonText }}
+    </a>
+  </p>
+</div>
+{% endfor %}
