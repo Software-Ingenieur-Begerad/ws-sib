@@ -3,7 +3,7 @@
  *
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-
+const sortByDisplayOrder = require('./src/utils/sort-by-display-order.js');
 //define filters
 const dateFilter = require('./src/filters/date-filter.js');
 const w3DateFilter = require('./src/filters/w3-date-filter.js');
@@ -25,6 +25,12 @@ module.exports = config => {
     //add filters to config
     config.addFilter('dateFilter', dateFilter);
     config.addFilter('w3DateFilter', w3DateFilter);
+
+    //add named collection called activity
+    //return items, sorted by display order
+    config.addCollection('activity', collection => {
+	return sortByDisplayOrder(collection.getFilteredByGlob('./src/activity/*.md'));
+    });
 
     //create named collection called blog
     config.addCollection('blog', collection => {
