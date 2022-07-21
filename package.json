@@ -21,6 +21,6 @@
     "moment": "^2.29.3"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.1"
+    "@11ty/eleventy": "1.0.1"
   }
 }
